@@ -55,27 +55,30 @@ body{
   }
   
   .main1 {
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    flex-direction: row !important;
     align-items: flex-start;
     text-align: left;
     max-width: 100%;
     gap: 40px;
     font-family: "Kanchenjunga", sans-serif;
+    width: 100%;
   }
   
   .text-content {
-    flex: 2;
+    flex: 2 !important;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    min-width: 0;
   }
   
   .image-content {
-    flex: 1;
+    flex: 1 !important;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 0;
   }
    
   .main1 h1 {
