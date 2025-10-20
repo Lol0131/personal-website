@@ -76,9 +76,10 @@ body{
   }
   .page1 img {
     height: auto;
-    width: 700px;
+    width: 100%;
+    max-width: 500px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
   }
 
   .floating-button {
@@ -197,11 +198,13 @@ body{
 
   .page1 img {
     animation: slideInRight 1s ease-out 0.3s both;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
   }
 
   .page1 img:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
   }
   
   /* Desktop profile image - keep rectangular */
