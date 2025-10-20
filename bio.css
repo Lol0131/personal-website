@@ -278,6 +278,18 @@ footer {
     background: linear-gradient(90deg, transparent, #5e7d6b, transparent);
   }
 
+  /* iPad and tablet landscape */
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .biosec {
+      padding: 40px 30px;
+    }
+    
+    .pictures img {
+      width: 220px;
+      height: 220px;
+    }
+  }
+
   /* Mobile responsiveness for bio page */
   @media (max-width: 768px) {
     .navbar {
@@ -367,5 +379,26 @@ footer {
     .pictures img {
       width: 120px;
       height: 120px;
+    }
+  }
+
+  /* iPhone SE and very small screens */
+  @media (max-width: 375px) {
+    .selfinfo h2 {
+      font-size: 18px;
+    }
+    
+    .selfinfo p {
+      font-size: 12px;
+    }
+    
+    .pictures img {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .navbar ul li a {
+      font-size: 13px;
+      padding: 6px 10px;
     }
   }

@@ -271,6 +271,22 @@ body{
     background: linear-gradient(90deg, transparent, #5e7d6b, transparent);
   }
 
+  /* iPad and tablet landscape */
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .page1 {
+      padding: 50px 40px;
+    }
+    
+    .main1 h1 {
+      font-size: 45px;
+    }
+    
+    .page1 img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
   /* Mobile responsiveness improvements */
   @media (max-width: 768px) {
     .navbar {
@@ -308,8 +324,9 @@ body{
     
     .page1 img {
       width: 100%;
-      max-width: 400px;
+      max-width: 300px;
       height: auto;
+      border-radius: 15px;
     }
     
     .floating-button {
@@ -327,6 +344,7 @@ body{
     }
   }
 
+  /* iPhone and small Android devices */
   @media (max-width: 480px) {
     .navbar {
       flex-direction: column;
@@ -337,18 +355,59 @@ body{
     
     .navbar ul {
       gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     
-    .main1 h1 {
-      font-size: 28px;
-    }
-    
-    .main1 p {
-      font-size: 15px;
+    .navbar ul li a {
+      font-size: 14px;
+      padding: 8px 12px;
     }
     
     .page1 {
       padding: 20px 15px;
+      min-height: 100vh;
+    }
+    
+    .main1 h1 {
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    
+    .main1 p {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    
+    .page1 img {
+      max-width: 250px;
+      margin-top: 15px;
+    }
+    
+    .floating-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+
+  /* iPhone SE and very small screens */
+  @media (max-width: 375px) {
+    .main1 h1 {
+      font-size: 24px;
+    }
+    
+    .main1 p {
+      font-size: 14px;
+    }
+    
+    .page1 img {
+      max-width: 200px;
+    }
+    
+    .navbar ul li a {
+      font-size: 13px;
+      padding: 6px 10px;
     }
   }
 
