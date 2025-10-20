@@ -203,6 +203,22 @@ body{
   .page1 img:hover {
     transform: scale(1.02);
   }
+  
+  /* Desktop profile image - keep rectangular */
+  .profile-img {
+    height: auto;
+    width: 700px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.02);
+  }
 
   @keyframes slideInLeft {
     from {
