@@ -278,72 +278,142 @@ footer {
     background: linear-gradient(90deg, transparent, #5e7d6b, transparent);
   }
 
-  /* iPad and tablet landscape */
+  /* iPad and tablet landscape - Modern UI */
   @media (max-width: 1024px) and (min-width: 769px) {
     .biosec {
-      padding: 40px 30px;
+      padding: 50px 40px;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border-radius: 30px;
+      margin: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    }
+    
+    .selfinfo {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    }
+    
+    .selfinfo h2 {
+      background: linear-gradient(135deg, #5e7d6b, #7a9b8a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .pictures {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
     }
     
     .pictures img {
-      width: 220px;
-      height: 220px;
+      width: 240px;
+      height: 240px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      border: 3px solid rgba(255, 255, 255, 0.8);
     }
   }
 
-  /* Mobile responsiveness for bio page */
+  /* iPhone Mobile Bio - Modern UI */
   @media (max-width: 768px) {
     .navbar {
-      padding: 0 20px;
-      height: 70px;
+      padding: 0 25px;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(94, 125, 107, 0.1);
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
     }
     
     .navbar h2 {
-      font-size: 24px;
+      font-size: 28px;
+      background: linear-gradient(135deg, #5e7d6b, #7a9b8a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
     
     .navbar ul li a {
       font-size: 16px;
-      margin-right: 10px;
+      margin-right: 15px;
+      padding: 10px 15px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+    
+    .navbar ul li a:hover {
+      background: rgba(94, 125, 107, 0.1);
+      transform: translateY(-2px);
     }
     
     .biosec {
       flex-direction: column;
-      padding: 30px 20px;
+      padding: 40px 25px;
       text-align: center;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      min-height: 100vh;
     }
     
     .selfinfo {
       max-width: 100%;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 35px;
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     }
     
     .selfinfo h2 {
-      font-size: 24px;
+      font-size: 28px;
+      background: linear-gradient(135deg, #5e7d6b, #7a9b8a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 25px;
     }
     
     .selfinfo p {
-      font-size: 14px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
     }
     
     .pictures {
       max-width: 100%;
       flex-direction: row;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     }
     
     .pictures img {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      border: 3px solid rgba(255, 255, 255, 0.8);
     }
     
     .links {
-      gap: 20px;
+      gap: 25px;
       flex-wrap: wrap;
     }
     
     footer {
-      padding: 15px 0;
+      padding: 20px 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
     }
   }
 
