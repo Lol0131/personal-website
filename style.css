@@ -376,6 +376,31 @@ body{
       transform: translateY(-5px);
       box-shadow: 0 15px 40px rgba(94, 125, 107, 0.4);
     }
+    
+    footer {
+      padding: 25px 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(94, 125, 107, 0.1);
+    }
+    
+    .links {
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    footer a {
+      font-size: 16px;
+      padding: 10px 15px;
+      border-radius: 18px;
+      transition: all 0.3s ease;
+    }
+    
+    footer a:hover {
+      background: rgba(94, 125, 107, 0.1);
+      transform: translateY(-2px);
+    }
   }
 
   /* iPhone Mobile - Modern UI */
@@ -522,6 +547,25 @@ body{
       padding: 20px 0;
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(94, 125, 107, 0.1);
+    }
+    
+    .links {
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    footer a {
+      font-size: 15px;
+      padding: 8px 12px;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+    }
+    
+    footer a:hover {
+      background: rgba(94, 125, 107, 0.1);
+      transform: translateY(-2px);
     }
   }
 
@@ -637,6 +681,59 @@ body{
     .navbar ul li a {
       font-size: 13px;
       padding: 6px 10px;
+    }
+    
+    footer {
+      padding: 15px 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(94, 125, 107, 0.1);
+    }
+    
+    .links {
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    footer a {
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+    
+    footer a:hover {
+      background: rgba(94, 125, 107, 0.1);
+      transform: translateY(-1px);
+    }
+  }
+
+  /* iPhone SE and very small screens */
+  @media (max-width: 375px) {
+    footer {
+      padding: 12px 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(94, 125, 107, 0.1);
+    }
+    
+    .links {
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    footer a {
+      font-size: 12px;
+      padding: 4px 6px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    
+    footer a:hover {
+      background: rgba(94, 125, 107, 0.1);
+      transform: translateY(-1px);
     }
   }
 
