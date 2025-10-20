@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Kanchenjunga", sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #F8F5F2;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.navbar h2{
+    color: #5e7d6b;
+    font-weight: 600;
+}
+
+.navbar h2 a{
+    text-decoration: none;
+    color: #5e7d6b;
+    transition: color 0.3s ease;
+}
+
+.navbar h2 a:hover{
+    color: #283e31;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #5e7d6b;
+    font-size: 18px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.page1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 40px
+  }
+  
+  .main1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* or center if you want everything centered */
+    text-align: left;
+    max-width: 50%;
+    font-family: "Kanchenjunga", sans-serif;
+  }
+   
+  .main1 h1 {
+    font-size: 50px;
+    color:#5e7d6b;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .main1 p {
+    font-size: 17px;
+    color: #333;
+  }
+  .page1 img {
+    height: auto;
+    width: 700px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .floating-button {
+    background-color: #f5e9dc;
+    color: #333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+  }
+  
+  .floating-button:hover {
+    transform: scale(1.05);
+    background-color: #ebd9c5;
+  }
+
+  .floating-button a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  .floating-button {
+    margin-top: 25px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: #f9f5f1;
+    color: #5e7d6b;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #5e7d6b;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #283e31;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  /* Enhanced animations and unique elements */
+  .navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(248, 245, 242, 0.9);
+    border-bottom: 1px solid rgba(94, 125, 107, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .navbar:hover {
+    background-color: rgba(248, 245, 242, 0.95);
+  }
+
+  .navbar ul li a:hover {
+    color: #283e31;
+    transform: translateY(-2px);
+  }
+
+  .page1 {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .page1::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 40%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(94, 125, 107, 0.05), rgba(245, 233, 220, 0.1));
+    transform: rotate(15deg);
+    z-index: -1;
+  }
+
+  .main1 h1 {
+    position: relative;
+    animation: slideInLeft 1s ease-out;
+  }
+
+  .main1 p {
+    animation: slideInLeft 1s ease-out 0.3s both;
+  }
+
+  .floating-button {
+    animation: slideInLeft 1s ease-out 0.6s both, float 3s ease-in-out infinite 1.5s;
+  }
+
+  .page1 img {
+    animation: slideInRight 1s ease-out 0.3s both;
+    transition: transform 0.3s ease;
+  }
+
+  .page1 img:hover {
+    transform: scale(1.02);
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Particle effect background */
+  .page1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(94, 125, 107, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(245, 233, 220, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(94, 125, 107, 0.05) 0%, transparent 50%);
+    z-index: -1;
+    animation: particleFloat 20s ease-in-out infinite;
+  }
+
+  @keyframes particleFloat {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    33% {
+      transform: translateY(-20px) rotate(1deg);
+    }
+    66% {
+      transform: translateY(10px) rotate(-1deg);
+    }
+  }
+
+  /* Enhanced footer with gradient */
+  footer {
+    background: linear-gradient(135deg, #f9f5f1 0%, #f5e9dc 100%);
+    border-top: 1px solid rgba(94, 125, 107, 0.1);
+    position: relative;
+  }
+
+  footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #5e7d6b, transparent);
+  }
+
+  /* Mobile responsiveness improvements */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0 20px;
+      height: 70px;
+    }
+    
+    .navbar h2 {
+      font-size: 24px;
+    }
+    
+    .navbar ul li a {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    
+    .page1 {
+      flex-direction: column;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    
+    .main1 {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    
+    .main1 h1 {
+      font-size: 35px;
+    }
+    
+    .main1 p {
+      font-size: 16px;
+    }
+    
+    .page1 img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+    
+    .floating-button {
+      padding: 12px 25px;
+      font-size: 16px;
+    }
+    
+    .links {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    
+    footer {
+      padding: 15px 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 15px 20px;
+      gap: 10px;
+    }
+    
+    .navbar ul {
+      gap: 15px;
+    }
+    
+    .main1 h1 {
+      font-size: 28px;
+    }
+    
+    .main1 p {
+      font-size: 15px;
+    }
+    
+    .page1 {
+      padding: 20px 15px;
+    }
+  }
+

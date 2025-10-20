@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paula Ticona | Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .projects-container {
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .projects-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .projects-header h1 {
+            font-size: 45px;
+            color: #5e7d6b;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .projects-header p {
+            font-size: 18px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .project-card {
+            background: linear-gradient(135deg, #f9f5f1 0%, #f5e9dc 100%);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #5e7d6b, #7a9b8a);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            border-color: #5e7d6b;
+        }
+        
+        .project-card h3 {
+            font-size: 24px;
+            color: #5e7d6b;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .project-card p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .tech-tag {
+            background-color: #5e7d6b;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .project-link {
+            background-color: #5e7d6b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .project-link:hover {
+            background-color: #4a6b5a;
+            transform: scale(1.05);
+        }
+        
+        .skills-section {
+            background: linear-gradient(135deg, #f8f5f2 0%, #f5e9dc 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+        .skills-section h2 {
+            font-size: 32px;
+            color: #5e7d6b;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+        }
+        
+        .skill-category {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-5px);
+        }
+        
+        .skill-category h4 {
+            font-size: 18px;
+            color: #5e7d6b;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .skill-category li {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .skill-category li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: #5e7d6b;
+            font-size: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .projects-container {
+                padding: 30px 20px;
+            }
+            
+            .projects-header h1 {
+                font-size: 35px;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .project-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2><a href="index.html">PT</a></h2>
+        <ul>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="res.html">Resumen</a></li>
+            <li><a href="proj.html">Projects</a></li>
+        </ul>
+    </div>
+    
+    <div class="projects-container">
+        <div class="projects-header">
+            <h1>My Projects</h1>
+            <p>Exploring the intersection of cybersecurity, software development, and social impact through hands-on projects and technical challenges.</p>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>🤖 AI-Powered Threat Intelligence Bot</h3>
+                <p>Built an internal Slack bot that integrated news APIs and LLMs to automatically summarize cybersecurity and privacy news for the Threat Intelligence team at CLEAR. Designed workflows to fetch, parse, and deliver concise updates into Slack, reducing manual monitoring and improving team efficiency.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Slack API</span>
+                    <span class="tech-tag">LLMs</span>
+                    <span class="tech-tag">News APIs</span>
+                    <span class="tech-tag">AWS Lambda</span>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3>🦷 CareBite: AI Dental X-ray Analysis</h3>
+                <p>Built a healthcare prototype that uses YOLO to analyze dental X-rays, detect cavities, and map findings to tooth numbers. Integrated OpenAI API to explain results in patient-friendly language and simulate treatment cost calculations based on insurance plans and provider rates.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">YOLO</span>
+                    <span class="tech-tag">OpenAI API</span>
+                    <span class="tech-tag">Computer Vision</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Lol0131/AiExamteeth.git" class="project-link">🔗 GitHub</a>
+                    <a href="https://www.youtube.com/watch?v=AN93XlIFrKc" class="project-link">🏆 Hackathon Demo</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3>🌐 Personal Portfolio Website</h3>
+                <p>Designed and developed a responsive, modern portfolio website showcasing my journey as a first-generation college student in computer science. Features clean animations, mobile-first design, and accessibility best practices.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Responsive Design</span>
+                </div>
+                <div class="project-links">
+                    <a href="index.html" class="project-link">👁️ Live Site</a>
+                    <a href="#" class="project-link">💻 Code</a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="skills-section">
+            <h2>Technical Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming & Scripting</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>Swift</li>
+                        <li>HTML/CSS</li>
+                        <li>Bash</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Cybersecurity Tools</h4>
+                    <ul>
+                        <li>CyberChef</li>
+                        <li>John the Ripper</li>
+                        <li>VirusTotal CLI</li>
+                        <li>Shodan</li>
+                        <li>Social-Engineer Toolkit (SET)</li>
+                        <li>Joe Sandbox</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Frameworks & Concepts</h4>
+                    <ul>
+                        <li>NIST 800-53B</li>
+                        <li>Compliance Documentation</li>
+                        <li>Risk Management</li>
+                        <li>Cryptography</li>
+                        <li>Malware Sandboxing</li>
+                        <li>Threat Analysis</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Developer Tools & APIs</h4>
+                    <ul>
+                        <li>AWS Lambda</li>
+                        <li>Slack API</li>
+                        <li>OpenAI API</li>
+                        <li>Git/GitHub</li>
+                        <li>Flask</li>
+                        <li>YOLO (Computer Vision)</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Leadership & Communication</h4>
+                    <ul>
+                        <li>Training & Mentoring</li>
+                        <li>Public Speaking</li>
+                        <li>Event Planning</li>
+                        <li>Bilingual (Spanish/English)</li>
+                        <li>Project Management</li>
+                        <li>Team Leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/paula-ticona-a7739b231/">LinkedIn</a>
+            <a href="mailto:ticona0626@gmail.com">Gmail</a>
+            <a href="https://github.com/Lol0131">Github</a>
+        </div>
+    </footer>
+</body>
+</html>

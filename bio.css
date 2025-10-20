@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Kanchenjunga", sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #F8F5F2;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.navbar h2{
+    color: #5e7d6b;
+    font-weight: 600;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #5e7d6b;
+    font-size: 18px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+.navbar h2 a{
+    text-decoration: none;
+    color: #5e7d6b;
+}
+.biosec{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding: 50px;
+  min-height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+  .pictures img {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin: 20px;
+  }
+  
+  .pictures img:nth-child(1) {
+    animation: bounceAround1 6s ease-in-out infinite;
+  }
+  
+  .pictures img:nth-child(2) {
+    animation: bounceAround2 8s ease-in-out infinite;
+  }
+  
+  .pictures img:hover {
+    transform: scale(1.1);
+    animation-play-state: paused;
+  }
+  
+  .selfinfo {
+    max-width: 700px;
+  }
+  
+  .selfinfo h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #5e7d6b;
+  }
+  
+  .selfinfo p {
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: left;
+  }
+  
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: #f9f5f1;
+    color: #5e7d6b;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #5e7d6b;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #283e31;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  /* Enhanced animations and unique elements for bio page */
+  .navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(248, 245, 242, 0.9);
+    border-bottom: 1px solid rgba(94, 125, 107, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .navbar:hover {
+    background-color: rgba(248, 245, 242, 0.95);
+  }
+
+  .navbar ul li a:hover {
+    color: #283e31;
+    transform: translateY(-2px);
+  }
+
+  .biosec {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .biosec::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: -10%;
+    width: 30%;
+    height: 160%;
+    background: linear-gradient(45deg, rgba(94, 125, 107, 0.05), rgba(245, 233, 220, 0.1));
+    transform: rotate(-15deg);
+    z-index: -1;
+  }
+
+  .selfinfo {
+    animation: slideInLeft 1s ease-out;
+  }
+
+  .selfinfo h2 {
+    animation: slideInLeft 1s ease-out 0.2s both;
+  }
+
+  .selfinfo p {
+    animation: slideInLeft 1s ease-out 0.4s both;
+  }
+
+  .pictures {
+    animation: slideInRight 1s ease-out 0.3s both;
+  }
+
+  .pictures img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .pictures img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(94, 125, 107, 0.2);
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Simple bouncing animations in place */
+  @keyframes bounceAround1 {
+    0%, 100% { 
+      transform: translateY(0px) scale(1); 
+    }
+    25% { 
+      transform: translateY(-10px) scale(1.05); 
+    }
+    50% { 
+      transform: translateY(-20px) scale(1.1); 
+    }
+    75% { 
+      transform: translateY(-10px) scale(1.05); 
+    }
+  }
+  
+  @keyframes bounceAround2 {
+    0%, 100% { 
+      transform: translateY(0px) scale(1); 
+    }
+    30% { 
+      transform: translateY(-15px) scale(1.08); 
+    }
+    60% { 
+      transform: translateY(-25px) scale(1.15); 
+    }
+    90% { 
+      transform: translateY(-15px) scale(1.08); 
+    }
+  }
+
+  /* Particle effect background */
+  .biosec::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 70% 30%, rgba(94, 125, 107, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 30% 70%, rgba(245, 233, 220, 0.1) 0%, transparent 50%);
+    z-index: -1;
+    animation: particleFloat 25s ease-in-out infinite;
+  }
+
+  @keyframes particleFloat {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    33% {
+      transform: translateY(-15px) rotate(0.5deg);
+    }
+    66% {
+      transform: translateY(8px) rotate(-0.5deg);
+    }
+  }
+
+  /* Enhanced footer with gradient */
+  footer {
+    background: linear-gradient(135deg, #f9f5f1 0%, #f5e9dc 100%);
+    border-top: 1px solid rgba(94, 125, 107, 0.1);
+    position: relative;
+  }
+
+  footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #5e7d6b, transparent);
+  }
+
+  /* Mobile responsiveness for bio page */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0 20px;
+      height: 70px;
+    }
+    
+    .navbar h2 {
+      font-size: 24px;
+    }
+    
+    .navbar ul li a {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    
+    .biosec {
+      flex-direction: column;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    
+    .selfinfo {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    
+    .selfinfo h2 {
+      font-size: 24px;
+    }
+    
+    .selfinfo p {
+      font-size: 14px;
+    }
+    
+    .pictures {
+      max-width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .pictures img {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .links {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    
+    footer {
+      padding: 15px 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 15px 20px;
+      gap: 10px;
+    }
+    
+    .navbar ul {
+      gap: 15px;
+    }
+    
+    .biosec {
+      padding: 20px 15px;
+    }
+    
+    .selfinfo h2 {
+      font-size: 22px;
+    }
+    
+    .selfinfo p {
+      font-size: 13px;
+    }
+    
+    .pictures {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .pictures img {
+      width: 120px;
+      height: 120px;
+    }
+  }
