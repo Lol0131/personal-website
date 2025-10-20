@@ -56,11 +56,26 @@ body{
   
   .main1 {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* or center if you want everything centered */
+    flex-direction: row;
+    align-items: flex-start;
     text-align: left;
-    max-width: 50%;
+    max-width: 100%;
+    gap: 40px;
     font-family: "Kanchenjunga", sans-serif;
+  }
+  
+  .text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .image-content {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
    
   .main1 h1 {
@@ -305,12 +320,22 @@ body{
     }
     
     .main1 {
+      flex-direction: column;
       background: rgba(255, 255, 255, 0.9);
       padding: 40px;
       border-radius: 25px;
       backdrop-filter: blur(10px);
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
       margin-bottom: 30px;
+    }
+    
+    .text-content {
+      flex: none;
+    }
+    
+    .image-content {
+      flex: none;
+      order: -1;
     }
     
     .main1 h1 {
@@ -450,6 +475,7 @@ body{
     }
     
     .main1 {
+      flex-direction: column;
       max-width: 100%;
       margin-bottom: 30px;
       background: rgba(255, 255, 255, 0.95);
@@ -458,6 +484,15 @@ body{
       backdrop-filter: blur(10px);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
       box-sizing: border-box;
+    }
+    
+    .text-content {
+      flex: none;
+    }
+    
+    .image-content {
+      flex: none;
+      order: -1;
     }
     
     .main1 p {
