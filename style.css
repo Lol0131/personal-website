@@ -412,20 +412,31 @@ body{
     
     .page1 {
       flex-direction: column;
-      padding: 40px 25px;
+      padding: 20px 15px;
       text-align: center;
       background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
       min-height: 100vh;
+      box-sizing: border-box;
     }
     
     .main1 {
       max-width: 100%;
       margin-bottom: 30px;
       background: rgba(255, 255, 255, 0.95);
-      padding: 35px;
+      padding: 25px 20px;
       border-radius: 25px;
       backdrop-filter: blur(10px);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      box-sizing: border-box;
+    }
+    
+    .main1 p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      word-wrap: break-word;
+      hyphens: auto;
+      text-align: left;
     }
     
     .main1 h1 {
@@ -445,8 +456,8 @@ body{
     }
     
     .profile-img {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       object-fit: cover;
       box-shadow: 
@@ -457,6 +468,7 @@ body{
       display: block;
       transition: all 0.3s ease;
       position: relative;
+      max-width: 90vw;
     }
     
     .profile-img:hover {
@@ -557,8 +569,8 @@ body{
     }
     
     .profile-img {
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
       box-shadow: 
@@ -569,6 +581,16 @@ body{
       display: block;
       transition: all 0.3s ease;
       position: relative;
+      max-width: 85vw;
+    }
+    
+    .main1 p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      word-wrap: break-word;
+      hyphens: auto;
+      text-align: left;
     }
     
     .profile-img:hover {
