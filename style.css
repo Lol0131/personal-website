@@ -487,22 +487,22 @@ body{
     
     .page1 {
       flex-direction: column;
-      padding: 20px 15px;
+      padding: 15px 10px;
       text-align: center;
       background: #F8F5F2;
-      min-height: calc(100vh - 160px);
+      min-height: calc(100vh - 200px);
       box-sizing: border-box;
     }
     
     .main1 {
       flex-direction: column;
       max-width: 100%;
-      margin: 20px auto 30px auto;
+      margin: 10px auto 20px auto;
       background: rgba(255, 255, 255, 0.95);
-      padding: 30px 20px;
-      border-radius: 20px;
+      padding: 20px 15px;
+      border-radius: 15px;
       backdrop-filter: blur(10px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       box-sizing: border-box;
       width: 100%;
       display: flex;
@@ -519,28 +519,28 @@ body{
     .image-content {
       flex: none;
       order: 1;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       display: flex;
       justify-content: center;
       width: 100%;
     }
     
     .main1 p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 25px;
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 15px;
       word-wrap: break-word;
       hyphens: auto;
       text-align: center;
     }
     
     .main1 h1 {
-      font-size: 38px;
+      font-size: 32px;
       background: linear-gradient(135deg, #5e7d6b, #7a9b8a);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       text-align: center;
     }
     
@@ -552,17 +552,17 @@ body{
     }
     
     .page1 img {
-      width: 220px;
-      height: 220px;
-      max-width: 65vw;
-      max-height: 65vw;
+      width: 180px;
+      height: 180px;
+      max-width: 50vw;
+      max-height: 50vw;
       border-radius: 50%;
       object-fit: cover;
       box-shadow: 
-        0 15px 30px rgba(0, 0, 0, 0.15),
-        0 0 0 3px rgba(255, 255, 255, 0.9),
-        0 0 0 6px rgba(94, 125, 107, 0.2);
-      margin: 20px auto;
+        0 10px 20px rgba(0, 0, 0, 0.15),
+        0 0 0 2px rgba(255, 255, 255, 0.9),
+        0 0 0 4px rgba(94, 125, 107, 0.2);
+      margin: 10px auto;
       display: block;
       transition: all 0.3s ease;
       position: relative;
