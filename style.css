@@ -505,20 +505,24 @@ body{
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       box-sizing: border-box;
       width: 100%;
+      display: flex;
+      align-items: center;
     }
     
     .text-content {
       flex: none;
       order: 2;
       text-align: center;
+      width: 100%;
     }
     
     .image-content {
       flex: none;
       order: 1;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       display: flex;
       justify-content: center;
+      width: 100%;
     }
     
     .main1 p {
@@ -537,6 +541,7 @@ body{
       -webkit-text-fill-color: transparent;
       background-clip: text;
       margin-bottom: 20px;
+      text-align: center;
     }
     
     .main1 p {
