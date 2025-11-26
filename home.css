@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  body {
+    background: #F8F5F2;
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    background: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #5e7d6b;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  /* PROFILE CARD */
+  .profile-card {
+    max-width: 420px;
+    background: white;
+    padding: 35px 25px;
+    margin: 40px auto;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+    text-align: center;
+  }
+  
+  /* IMAGE */
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #e5e5e5;
+    margin-bottom: 20px;
+  }
+  
+  /* NAME */
+  .profile-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #5e7d6b;
+    margin-bottom: 18px;
+  }
+  
+  /* TEXT */
+  .profile-text {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  /* SOCIAL ICONS */
+  .profile-links {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 25px;
+  }
+  
+  .profile-links a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #cfcfcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5e7d6b;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  /* BUTTON */
+  .profile-btn {
+    background: #5e7d6b;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 26px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .profile-btn a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #5e7d6b;
+    font-size: 14px;
+  }
+  
